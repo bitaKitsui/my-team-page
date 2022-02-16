@@ -1,0 +1,173 @@
+body {
+    display: flex;
+    flex-flow: column;
+    min-height: 1489px;
+    min-width: 1440px;
+}
+
+.header {
+    width: 100%;
+    height: 237px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 243px;
+    padding-right: 265px;
+    margin-bottom: 96px;
+}
+
+.header__title {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 48px;
+    letter-spacing: -0.045em;
+    padding-top: 110px;
+}
+
+.header__about {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    padding-top: 117px;
+}
+
+.header__description {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.header__about-block {
+    display: flex;
+    flex-direction: column;
+    width: 439px;
+}
+
+.main {
+    flex: 1;
+}
+
+.crews__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 240px;
+    margin-right: 275px;
+}
+
+.list--center {
+    margin-top: 99px;
+}
+
+.crews__header {
+    display: flex;
+}
+
+.crews__photo {
+    width: 238px;
+    height: 347px;
+    margin-right: 10px;
+}
+
+.crews__job {
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+}
+
+.crews__name {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+}
+
+.footer {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 17px;
+    color: #A9A9A9;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        display: flex;
+        flex-flow: column;
+        min-height: 0;
+        min-width: 0;
+    }
+
+    .header {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 12px;
+        height: 280px;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .header__title {
+        padding-top: 0;
+        margin-top: 71px;
+    }
+
+    .header__about {
+        padding-top: 0;
+    }
+
+    .header__description {
+        height: 87px;
+    }
+
+    .header__about-block {
+        width: 333px;
+        height: 124px;
+        justify-content: space-between;
+    }
+
+    .main {
+        display: block;
+    }
+
+    .crews__list {
+        display: flex;
+        margin-left: 19px;
+        margin-right: 18px;
+    }
+
+    .list--center {
+        margin-top: 0;
+    }
+
+    .sp-list__item {
+        margin-top: 38px;
+    }
+
+    .sp-list-right {
+        margin-top: 70px;
+    }
+
+    .crews__photo {
+        width: 138px;
+        height: 218px;
+        margin-right: 6px;
+    }
+
+    .crews__job {
+        font-size: 10px;
+        line-height: 13px;
+    }
+
+    .crews__name {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 21px;
+        margin-top: 10px;
+    }
+
+    .footer {
+        margin-top: 134px;
+    }
+}
